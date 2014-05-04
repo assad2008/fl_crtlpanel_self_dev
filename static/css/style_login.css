@@ -1,0 +1,13 @@
+.login_control{
+	width:100%;
+	padding:10px 0;
+}
+.login_control a{
+	display:block;
+	float:left;
+	width:50%;
+	text-align:center;
+}
+#login p span[title="mail"] {
+	background:url(../images/message.png) center center no-repeat;
+}

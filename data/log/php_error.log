@@ -1,0 +1,17 @@
+[04-May-2014 12:32:01] PHP Warning:  Smarty error: unable to read resource: "start.tpl" in /data0/www/html/iosadm/models/smarty/Smarty.class.php on line 1114
+[04-May-2014 12:41:13] PHP Warning:  Smarty error: unable to read resource: "cp_index.tpl" in /data0/www/html/iosadm/models/smarty/Smarty.class.php on line 1114
+[04-May-2014 12:41:13] PHP Warning:  Smarty error: unable to read resource: "cp_index.tpl" in /data0/www/html/iosadm/models/smarty/Smarty.class.php on line 1114
+[04-May-2014 12:58:59] PHP Warning:  Smarty error: unable to read resource: "cp_header.tpl" in /data0/www/html/iosadm/models/smarty/Smarty.class.php on line 1114
+[04-May-2014 12:58:59] PHP Warning:  Smarty error: unable to read resource: "cp_header.tpl" in /data0/www/html/iosadm/models/smarty/Smarty.class.php on line 1114
+[04-May-2014 12:58:59] PHP Warning:  Smarty error: unable to read resource: "cp_footer.tpl" in /data0/www/html/iosadm/models/smarty/Smarty.class.php on line 1114
+[04-May-2014 12:58:59] PHP Warning:  Smarty error: unable to read resource: "cp_footer.tpl" in /data0/www/html/iosadm/models/smarty/Smarty.class.php on line 1114
+[04-May-2014 17:42:03] PHP Warning:  oci_connect() [<a href='function.oci-connect'>function.oci-connect</a>]: ORA-12162: TNS:net service name is incorrectly specified in /data0/www/html/iosadm/core/pm_oracle.class.php on line 76
+[04-May-2014 17:42:03] PHP Warning:  oci_fetch_array() expects parameter 1 to be resource, boolean given in /data0/www/html/iosadm/core/pm_oracle.class.php on line 164
+[04-May-2014 17:42:09] PHP Warning:  oci_connect() [<a href='function.oci-connect'>function.oci-connect</a>]: ORA-12162: TNS:net service name is incorrectly specified in /data0/www/html/iosadm/core/pm_oracle.class.php on line 76
+[04-May-2014 17:42:09] PHP Warning:  oci_fetch_array() expects parameter 1 to be resource, boolean given in /data0/www/html/iosadm/core/pm_oracle.class.php on line 164
+[04-May-2014 17:42:35] PHP Warning:  oci_connect() [<a href='function.oci-connect'>function.oci-connect</a>]: ORA-12162: TNS:net service name is incorrectly specified in /data0/www/html/iosadm/core/pm_oracle.class.php on line 76
+[04-May-2014 17:42:35] PHP Warning:  oci_fetch_array() expects parameter 1 to be resource, boolean given in /data0/www/html/iosadm/core/pm_oracle.class.php on line 164
+[04-May-2014 17:42:53] PHP Warning:  oci_connect() [<a href='function.oci-connect'>function.oci-connect</a>]: ORA-12162: TNS:net service name is incorrectly specified in /data0/www/html/iosadm/core/pm_oracle.class.php on line 76
+[04-May-2014 17:42:53] PHP Warning:  oci_fetch_array() expects parameter 1 to be resource, boolean given in /data0/www/html/iosadm/core/pm_oracle.class.php on line 164
+[04-May-2014 17:43:53] PHP Warning:  oci_connect() [<a href='function.oci-connect'>function.oci-connect</a>]: ORA-12162: TNS:net service name is incorrectly specified in /data0/www/html/iosadm/core/pm_oracle.class.php on line 76
+[04-May-2014 17:43:53] PHP Warning:  oci_fetch_array() expects parameter 1 to be resource, boolean given in /data0/www/html/iosadm/core/pm_oracle.class.php on line 164
