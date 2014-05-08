@@ -19,7 +19,7 @@
 	defined('PATH_DATA') || define('PATH_DATA', PATH_ADMIN . '/data');
 	defined('PATH_LANG') || define('PATH_LANG', PATH_ADMIN . '/languages');
 	defined('PATH_XML') || define('PATH_XML', PATH_ADMIN . '/xmlfile');
-	defined('PATH_ADMIN_LOG_PATH') || define('PATH_XML', PATH_ADMIN . '/data/log/adminlogs');
+	defined('PATH_ADMIN_LOG_PATH') || define('PATH_ADMIN_LOG_PATH', PATH_ADMIN . '/data/log/adminlogs');
 
 	//模板路径
 	defined('PATH_TPLS') || define('PATH_TPLS', PATH_ADMIN . '/template');

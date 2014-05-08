@@ -312,7 +312,7 @@ class mod_login
                 $REQUEST_URI = '?' . $_SERVER['QUERY_STRING'];
                 $onlineip = get_client_ip();
                 $timestamp = time();
-                $admin_recordfile = PATH_ADMIN . "/data/log/admin_log.php";
+                $admin_recordfile = PATH_ADMIN_LOG_PATH . "/admin_log_" .date('Y-m-d') . ".php";
                 $record_name = str_replace('|', '&#124;', Char_cv($current_cookie_username));
                 $record_URI = str_replace('|', '&#124;', Char_cv($REQUEST_URI));
 								$new_record = "<?die;?>|$record_name|$record_URI|$onlineip|$timestamp|$_postdata|\n";
