@@ -201,12 +201,12 @@ class mod_login
           $cook_pre = AUTH_KEY . '_admin_auth';
           $_COOKIE[$cook_pre] = $cookie_value;
           setcookie(AUTH_KEY . '_admin_auth', $cookie_value, $cookie_expire, PATH_COOKIE);
-			defined('USERNAME') || define('USERNAME', $username);
-			$row_info = pm_db::fetch_one();
-			defined('TRUENAME') || define('TRUENAME', $row_info['truename']);
-			defined('ADMINLEVEL') || define('ADMINLEVEL', $row_info['level']);
-			defined('ADMINUSERID') || define('ADMINUSERID', $row_info['user_id']);
-			defined('ISSUPERADMIN') || define('ISSUPERADMIN',$row_info['is_super']);
+					defined('USERNAME') || define('USERNAME', $username);
+					$row_info = pm_db::fetch_one();
+					defined('TRUENAME') || define('TRUENAME', $row_info['truename']);
+					defined('ADMINLEVEL') || define('ADMINLEVEL', $row_info['level']);
+					defined('ADMINUSERID') || define('ADMINUSERID', $row_info['user_id']);
+					defined('ISSUPERADMIN') || define('ISSUPERADMIN',$row_info['is_super']);
           if(ADMINLEVEL == 1)
           {
           	defined('If_manager') || define('If_manager', 1);
@@ -216,7 +216,7 @@ class mod_login
           {
           	defined('If_manager') || define('If_manager', 0);
             $rightset = array();
-			$rightset = r_unserialize($row_info['rights']);
+						$rightset = r_unserialize($row_info['rights']);
             $crmi = strpos($row_info['rights'],"crmhome_index");
             $summary = strpos($row_info['rights'],'summarybutton');
             defined('CRM') || define('CRM',$crmi);
@@ -267,10 +267,10 @@ class mod_login
                   }
                }
 						}
-            $admin_recordfile = PATH_ADMIN . "/data/log/admin_log.php";
+            $admin_recordfile = PATH_ADMIN_LOG_PATH . "/admin_log_" .date('Y-m-d') . ".php";
             $onlineip = get_client_ip();
             $new_record = "<?die;?>|$username|***|Logging Failed|$onlineip|" . time() . "|\n"; //登陆次数限制
-            //writeover($admin_recordfile,$new_record,"ab");
+            writeover($admin_recordfile,$new_record,"ab");
 						return true;
 					}
           else
