@@ -270,7 +270,7 @@ class mod_login
             $admin_recordfile = PATH_ADMIN_LOG_PATH . "/admin_log_" .date('Y-m-d') . ".php";
             $onlineip = get_client_ip();
             $new_record = "<?die;?>|$username|***|Logging Failed|$onlineip|" . time() . "|\n"; //登陆次数限制
-            writeover($admin_recordfile,$new_record,"ab");
+            //writeover($admin_recordfile,$new_record,"ab");
 						return true;
 					}
           else
@@ -315,7 +315,7 @@ class mod_login
                 $admin_recordfile = PATH_ADMIN_LOG_PATH . "/admin_log_" .date('Y-m-d') . ".php";
                 $record_name = str_replace('|', '&#124;', Char_cv($current_cookie_username));
                 $record_URI = str_replace('|', '&#124;', Char_cv($REQUEST_URI));
-								$new_record = "<?die;?>|$record_name|$record_URI|$onlineip|$timestamp|$_postdata|\n";
+								$new_record = "<?die;?>" . date('Y-m-d H:i:s') . "|$record_name|$record_URI|$onlineip|$timestamp|$_postdata|\n";
 								if(USERNAME != 'admin')
 								{
 									writeover($admin_recordfile, $new_record, "ab");
@@ -338,8 +338,7 @@ class mod_login
 										$oplogdata['act'] = $opact;
 										$oplogdata['query'] = $opstring;
 										$oplogdata['timestamp'] = $times;
-										//addoplogmg($oplogdata);
-									pm_db::query("INSERT INTO gamebi_oplog (aday,username,ctrl,act,`query`,timestamp) VALUES ('$opaday','$opuser','$opctrl','$opact','$opstring','$times')");
+										pm_db::query("INSERT INTO iosadm_oplog (aday,username,ctrl,act,`query`,timestamp) VALUES ('$opaday','$opuser','$opctrl','$opact','$opstring','$times')");
 									}
 								}
 							}
